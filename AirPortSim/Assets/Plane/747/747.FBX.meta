@@ -1,0 +1,766 @@
+fileFormatVersion: 2
+guid: c70073ed7fa615345ba4ec5eb8aaa1b5
+timeCreated: 1493127560
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Body
+    100004: Body_MeshPart0
+    100006: Body_MeshPart1
+    100008: Bone001
+    100010: Bone001 1
+    100012: Bone002
+    100014: Bone002 1
+    100016: Bone003
+    100018: Bone004
+    100020: Bone004 1
+    100022: Bone005
+    100024: Bone005 1
+    100026: Bone006
+    100028: Bone010
+    100030: Bone010 1
+    100032: Bone011
+    100034: Bone011 1
+    100036: Bone012
+    100038: Bone013
+    100040: Bone013 1
+    100042: Bone014
+    100044: Bone014 1
+    100046: Bone015
+    100048: Bone016
+    100050: Bone016 1
+    100052: Bone017
+    100054: Bone017 1
+    100056: Bone018
+    100058: Bone019
+    100060: Bone019 1
+    100062: Bone020
+    100064: Bone020 1
+    100066: Bone021
+    100068: Bone022
+    100070: Bone022 1
+    100072: Bone023
+    100074: Bone023 1
+    100076: Bone024
+    100078: Bone028
+    100080: Bone028 1
+    100082: Bone029
+    100084: Bone029 1
+    100086: Bone030
+    100088: Bone031
+    100090: Bone031 1
+    100092: Bone032
+    100094: Bone032 1
+    100096: Bone033
+    100098: Bone034
+    100100: Bone034 1
+    100102: Bone035
+    100104: Bone035 1
+    100106: Bone036
+    100108: Bone040
+    100110: Bone040 1
+    100112: Bone041
+    100114: Bone042
+    100116: Bone042 1
+    100118: Bone043
+    100120: Bone044
+    100122: Bone044 1
+    100124: Bone045
+    100126: Bone045 1
+    100128: Dummy001
+    100130: Dummy001 1
+    100132: Dummy002
+    100134: Dummy002 1
+    100136: Dummy002 2
+    100138: Dummy003
+    100140: Dummy003 1
+    100142: Dummy003 2
+    100144: Dummy004
+    100146: Dummy004 1
+    100148: Dummy004 2
+    100150: Dummy007
+    100152: Dummy007 1
+    100154: Dummy007 2
+    100156: Dummy009
+    100158: Dummy009 1
+    100160: Dummy009 2
+    100162: Dummy010
+    100164: Dummy010 1
+    100166: Dummy010 2
+    100168: Dummy011
+    100170: Dummy011 1
+    100172: Dummy012
+    100174: Dummy012 1
+    100176: Dummy013
+    100178: Dummy013 1
+    100180: Dummy014
+    100182: Dummy014 1
+    100184: Dummy014 2
+    100186: Dummy015
+    100188: Dummy015 1
+    100190: Dummy015 2
+    100192: Dummy016
+    100194: Dummy016 1
+    100196: Dummy016 2
+    100198: Dummy017
+    100200: Dummy017 1
+    100202: Dummy017 2
+    100204: Dummy018
+    100206: Dummy018 1
+    100208: Dummy018 2
+    100210: Dummy019
+    100212: Dummy019 1
+    100214: Dummy019 2
+    100216: Dummy020
+    100218: Dummy020 1
+    100220: Dummy020 2
+    100222: Dummy021
+    100224: Dummy021 1
+    100226: Dummy021 2
+    100228: Dummy022
+    100230: Dummy022 1
+    100232: Dummy022 2
+    100234: Dummy025
+    100236: Dummy025 1
+    100238: Dummy025 2
+    100240: Dummy026
+    100242: Dummy026 1
+    100244: Dummy026 2
+    100246: Dummy027
+    100248: Dummy027 1
+    100250: Dummy028
+    100252: Dummy028 1
+    100254: Dummy031
+    100256: Dummy031 1
+    100258: Dummy031 2
+    100260: Dummy032
+    100262: Dummy032 1
+    100264: Dummy033
+    100266: Dummy033 1
+    100268: Dummy033 2
+    100270: F_Arm
+    100272: F_Wheels
+    100274: IK Chain001
+    100276: IK Chain002
+    100278: IK Chain004
+    100280: IK Chain005
+    100282: IK Chain006
+    100284: IK Chain007
+    100286: IK Chain008
+    100288: IK Chain010
+    100290: IK Chain011
+    100292: IK Chain012
+    100294: IK Chain014
+    100296: IK Chain015
+    100298: Interior
+    100300: L_Airleron
+    100302: L_Elevator
+    100304: L_Flap
+    100306: L_Propeller_01
+    100308: L_Propeller_02
+    100310: LF_GearDoor_01
+    100312: LF_GearDoor_02
+    100314: LF_Hinge_01
+    100316: LF_Hinge_02
+    100318: LF_Hinge_03
+    100320: LF_Hinge_04
+    100322: LR_Arm_01
+    100324: LR_Arm_02
+    100326: LR_ArmGear_01
+    100328: LR_ArmGear_02
+    100330: LR_ArmGear_03
+    100332: LR_ArmGear_04
+    100334: LR_GearDoor_01
+    100336: LR_GearDoor_02
+    100338: LR_GearDoor_03
+    100340: LR_GearDoor_04
+    100342: LR_GearDoor_05
+    100344: LR_GearDoor_06
+    100346: LR_GearDoor_07
+    100348: LR_Hinge_L01
+    100350: LR_Hinge_L02
+    100352: LR_Hinge_L03
+    100354: LR_Hinge_L04
+    100356: LR_Hinge_R01
+    100358: LR_Hinge_R02
+    100360: LR_Hinge_R03
+    100362: LR_Hinge_R04
+    100364: LR_Wheels_01
+    100366: LR_Wheels_02
+    100368: LR_Wheels_03
+    100370: LR_Wheels_04
+    100372: Pilot
+    100374: R_Airleron
+    100376: R_Elevator
+    100378: R_Flap
+    100380: R_Propeller_01
+    100382: R_Propeller_02
+    100384: RF_GearDoor_01
+    100386: RF_GearDoor_02
+    100388: RF_Hinge_01
+    100390: RF_Hinge_02
+    100392: RF_Hinge_03
+    100394: RF_Hinge_04
+    100396: RR_Arm_01
+    100398: RR_Arm_02
+    100400: RR_ArmGear_01
+    100402: RR_ArmGear_02
+    100404: RR_ArmGear_03
+    100406: RR_ArmGear_04
+    100408: RR_GearDoor_01
+    100410: RR_GearDoor_02
+    100412: RR_GearDoor_03
+    100414: RR_GearDoor_04
+    100416: RR_GearDoor_05
+    100418: RR_GearDoor_06
+    100420: RR_GearDoor_07
+    100422: RR_Hinge_L01
+    100424: RR_Hinge_L02
+    100426: RR_Hinge_L03
+    100428: RR_Hinge_L04
+    100430: RR_Hinge_R01
+    100432: RR_Hinge_R02
+    100434: RR_Hinge_R03
+    100436: RR_Hinge_R04
+    100438: RR_Wheels_01
+    100440: RR_Wheels_02
+    100442: RR_Wheels_03
+    100444: RR_Wheels_04
+    100446: Rudder
+    100448: Windshield
+    400000: //RootNode
+    400002: Body
+    400004: Body_MeshPart0
+    400006: Body_MeshPart1
+    400008: Bone001
+    400010: Bone001 1
+    400012: Bone002
+    400014: Bone002 1
+    400016: Bone003
+    400018: Bone004
+    400020: Bone004 1
+    400022: Bone005
+    400024: Bone005 1
+    400026: Bone006
+    400028: Bone010
+    400030: Bone010 1
+    400032: Bone011
+    400034: Bone011 1
+    400036: Bone012
+    400038: Bone013
+    400040: Bone013 1
+    400042: Bone014
+    400044: Bone014 1
+    400046: Bone015
+    400048: Bone016
+    400050: Bone016 1
+    400052: Bone017
+    400054: Bone017 1
+    400056: Bone018
+    400058: Bone019
+    400060: Bone019 1
+    400062: Bone020
+    400064: Bone020 1
+    400066: Bone021
+    400068: Bone022
+    400070: Bone022 1
+    400072: Bone023
+    400074: Bone023 1
+    400076: Bone024
+    400078: Bone028
+    400080: Bone028 1
+    400082: Bone029
+    400084: Bone029 1
+    400086: Bone030
+    400088: Bone031
+    400090: Bone031 1
+    400092: Bone032
+    400094: Bone032 1
+    400096: Bone033
+    400098: Bone034
+    400100: Bone034 1
+    400102: Bone035
+    400104: Bone035 1
+    400106: Bone036
+    400108: Bone040
+    400110: Bone040 1
+    400112: Bone041
+    400114: Bone042
+    400116: Bone042 1
+    400118: Bone043
+    400120: Bone044
+    400122: Bone044 1
+    400124: Bone045
+    400126: Bone045 1
+    400128: Dummy001
+    400130: Dummy001 1
+    400132: Dummy002
+    400134: Dummy002 1
+    400136: Dummy002 2
+    400138: Dummy003
+    400140: Dummy003 1
+    400142: Dummy003 2
+    400144: Dummy004
+    400146: Dummy004 1
+    400148: Dummy004 2
+    400150: Dummy007
+    400152: Dummy007 1
+    400154: Dummy007 2
+    400156: Dummy009
+    400158: Dummy009 1
+    400160: Dummy009 2
+    400162: Dummy010
+    400164: Dummy010 1
+    400166: Dummy010 2
+    400168: Dummy011
+    400170: Dummy011 1
+    400172: Dummy012
+    400174: Dummy012 1
+    400176: Dummy013
+    400178: Dummy013 1
+    400180: Dummy014
+    400182: Dummy014 1
+    400184: Dummy014 2
+    400186: Dummy015
+    400188: Dummy015 1
+    400190: Dummy015 2
+    400192: Dummy016
+    400194: Dummy016 1
+    400196: Dummy016 2
+    400198: Dummy017
+    400200: Dummy017 1
+    400202: Dummy017 2
+    400204: Dummy018
+    400206: Dummy018 1
+    400208: Dummy018 2
+    400210: Dummy019
+    400212: Dummy019 1
+    400214: Dummy019 2
+    400216: Dummy020
+    400218: Dummy020 1
+    400220: Dummy020 2
+    400222: Dummy021
+    400224: Dummy021 1
+    400226: Dummy021 2
+    400228: Dummy022
+    400230: Dummy022 1
+    400232: Dummy022 2
+    400234: Dummy025
+    400236: Dummy025 1
+    400238: Dummy025 2
+    400240: Dummy026
+    400242: Dummy026 1
+    400244: Dummy026 2
+    400246: Dummy027
+    400248: Dummy027 1
+    400250: Dummy028
+    400252: Dummy028 1
+    400254: Dummy031
+    400256: Dummy031 1
+    400258: Dummy031 2
+    400260: Dummy032
+    400262: Dummy032 1
+    400264: Dummy033
+    400266: Dummy033 1
+    400268: Dummy033 2
+    400270: F_Arm
+    400272: F_Wheels
+    400274: IK Chain001
+    400276: IK Chain002
+    400278: IK Chain004
+    400280: IK Chain005
+    400282: IK Chain006
+    400284: IK Chain007
+    400286: IK Chain008
+    400288: IK Chain010
+    400290: IK Chain011
+    400292: IK Chain012
+    400294: IK Chain014
+    400296: IK Chain015
+    400298: Interior
+    400300: L_Airleron
+    400302: L_Elevator
+    400304: L_Flap
+    400306: L_Propeller_01
+    400308: L_Propeller_02
+    400310: LF_GearDoor_01
+    400312: LF_GearDoor_02
+    400314: LF_Hinge_01
+    400316: LF_Hinge_02
+    400318: LF_Hinge_03
+    400320: LF_Hinge_04
+    400322: LR_Arm_01
+    400324: LR_Arm_02
+    400326: LR_ArmGear_01
+    400328: LR_ArmGear_02
+    400330: LR_ArmGear_03
+    400332: LR_ArmGear_04
+    400334: LR_GearDoor_01
+    400336: LR_GearDoor_02
+    400338: LR_GearDoor_03
+    400340: LR_GearDoor_04
+    400342: LR_GearDoor_05
+    400344: LR_GearDoor_06
+    400346: LR_GearDoor_07
+    400348: LR_Hinge_L01
+    400350: LR_Hinge_L02
+    400352: LR_Hinge_L03
+    400354: LR_Hinge_L04
+    400356: LR_Hinge_R01
+    400358: LR_Hinge_R02
+    400360: LR_Hinge_R03
+    400362: LR_Hinge_R04
+    400364: LR_Wheels_01
+    400366: LR_Wheels_02
+    400368: LR_Wheels_03
+    400370: LR_Wheels_04
+    400372: Pilot
+    400374: R_Airleron
+    400376: R_Elevator
+    400378: R_Flap
+    400380: R_Propeller_01
+    400382: R_Propeller_02
+    400384: RF_GearDoor_01
+    400386: RF_GearDoor_02
+    400388: RF_Hinge_01
+    400390: RF_Hinge_02
+    400392: RF_Hinge_03
+    400394: RF_Hinge_04
+    400396: RR_Arm_01
+    400398: RR_Arm_02
+    400400: RR_ArmGear_01
+    400402: RR_ArmGear_02
+    400404: RR_ArmGear_03
+    400406: RR_ArmGear_04
+    400408: RR_GearDoor_01
+    400410: RR_GearDoor_02
+    400412: RR_GearDoor_03
+    400414: RR_GearDoor_04
+    400416: RR_GearDoor_05
+    400418: RR_GearDoor_06
+    400420: RR_GearDoor_07
+    400422: RR_Hinge_L01
+    400424: RR_Hinge_L02
+    400426: RR_Hinge_L03
+    400428: RR_Hinge_L04
+    400430: RR_Hinge_R01
+    400432: RR_Hinge_R02
+    400434: RR_Hinge_R03
+    400436: RR_Hinge_R04
+    400438: RR_Wheels_01
+    400440: RR_Wheels_02
+    400442: RR_Wheels_03
+    400444: RR_Wheels_04
+    400446: Rudder
+    400448: Windshield
+    2300000: Body_MeshPart0
+    2300002: Body_MeshPart1
+    2300004: F_Arm
+    2300006: F_Wheels
+    2300008: Interior
+    2300010: L_Airleron
+    2300012: L_Elevator
+    2300014: L_Flap
+    2300016: L_Propeller_01
+    2300018: L_Propeller_02
+    2300020: LF_GearDoor_01
+    2300022: LF_GearDoor_02
+    2300024: LF_Hinge_01
+    2300026: LF_Hinge_02
+    2300028: LF_Hinge_03
+    2300030: LF_Hinge_04
+    2300032: LR_Arm_01
+    2300034: LR_Arm_02
+    2300036: LR_ArmGear_01
+    2300038: LR_ArmGear_02
+    2300040: LR_ArmGear_03
+    2300042: LR_ArmGear_04
+    2300044: LR_GearDoor_01
+    2300046: LR_GearDoor_02
+    2300048: LR_GearDoor_03
+    2300050: LR_GearDoor_04
+    2300052: LR_GearDoor_05
+    2300054: LR_GearDoor_06
+    2300056: LR_GearDoor_07
+    2300058: LR_Hinge_L01
+    2300060: LR_Hinge_L02
+    2300062: LR_Hinge_L03
+    2300064: LR_Hinge_L04
+    2300066: LR_Hinge_R01
+    2300068: LR_Hinge_R02
+    2300070: LR_Hinge_R03
+    2300072: LR_Hinge_R04
+    2300074: LR_Wheels_01
+    2300076: LR_Wheels_02
+    2300078: LR_Wheels_03
+    2300080: LR_Wheels_04
+    2300082: Pilot
+    2300084: R_Airleron
+    2300086: R_Elevator
+    2300088: R_Flap
+    2300090: R_Propeller_01
+    2300092: R_Propeller_02
+    2300094: RF_GearDoor_01
+    2300096: RF_GearDoor_02
+    2300098: RF_Hinge_01
+    2300100: RF_Hinge_02
+    2300102: RF_Hinge_03
+    2300104: RF_Hinge_04
+    2300106: RR_Arm_01
+    2300108: RR_Arm_02
+    2300110: RR_ArmGear_01
+    2300112: RR_ArmGear_02
+    2300114: RR_ArmGear_03
+    2300116: RR_ArmGear_04
+    2300118: RR_GearDoor_01
+    2300120: RR_GearDoor_02
+    2300122: RR_GearDoor_03
+    2300124: RR_GearDoor_04
+    2300126: RR_GearDoor_05
+    2300128: RR_GearDoor_06
+    2300130: RR_GearDoor_07
+    2300132: RR_Hinge_L01
+    2300134: RR_Hinge_L02
+    2300136: RR_Hinge_L03
+    2300138: RR_Hinge_L04
+    2300140: RR_Hinge_R01
+    2300142: RR_Hinge_R02
+    2300144: RR_Hinge_R03
+    2300146: RR_Hinge_R04
+    2300148: RR_Wheels_01
+    2300150: RR_Wheels_02
+    2300152: RR_Wheels_03
+    2300154: RR_Wheels_04
+    2300156: Rudder
+    2300158: Windshield
+    3300000: Body_MeshPart0
+    3300002: Body_MeshPart1
+    3300004: F_Arm
+    3300006: F_Wheels
+    3300008: Interior
+    3300010: L_Airleron
+    3300012: L_Elevator
+    3300014: L_Flap
+    3300016: L_Propeller_01
+    3300018: L_Propeller_02
+    3300020: LF_GearDoor_01
+    3300022: LF_GearDoor_02
+    3300024: LF_Hinge_01
+    3300026: LF_Hinge_02
+    3300028: LF_Hinge_03
+    3300030: LF_Hinge_04
+    3300032: LR_Arm_01
+    3300034: LR_Arm_02
+    3300036: LR_ArmGear_01
+    3300038: LR_ArmGear_02
+    3300040: LR_ArmGear_03
+    3300042: LR_ArmGear_04
+    3300044: LR_GearDoor_01
+    3300046: LR_GearDoor_02
+    3300048: LR_GearDoor_03
+    3300050: LR_GearDoor_04
+    3300052: LR_GearDoor_05
+    3300054: LR_GearDoor_06
+    3300056: LR_GearDoor_07
+    3300058: LR_Hinge_L01
+    3300060: LR_Hinge_L02
+    3300062: LR_Hinge_L03
+    3300064: LR_Hinge_L04
+    3300066: LR_Hinge_R01
+    3300068: LR_Hinge_R02
+    3300070: LR_Hinge_R03
+    3300072: LR_Hinge_R04
+    3300074: LR_Wheels_01
+    3300076: LR_Wheels_02
+    3300078: LR_Wheels_03
+    3300080: LR_Wheels_04
+    3300082: Pilot
+    3300084: R_Airleron
+    3300086: R_Elevator
+    3300088: R_Flap
+    3300090: R_Propeller_01
+    3300092: R_Propeller_02
+    3300094: RF_GearDoor_01
+    3300096: RF_GearDoor_02
+    3300098: RF_Hinge_01
+    3300100: RF_Hinge_02
+    3300102: RF_Hinge_03
+    3300104: RF_Hinge_04
+    3300106: RR_Arm_01
+    3300108: RR_Arm_02
+    3300110: RR_ArmGear_01
+    3300112: RR_ArmGear_02
+    3300114: RR_ArmGear_03
+    3300116: RR_ArmGear_04
+    3300118: RR_GearDoor_01
+    3300120: RR_GearDoor_02
+    3300122: RR_GearDoor_03
+    3300124: RR_GearDoor_04
+    3300126: RR_GearDoor_05
+    3300128: RR_GearDoor_06
+    3300130: RR_GearDoor_07
+    3300132: RR_Hinge_L01
+    3300134: RR_Hinge_L02
+    3300136: RR_Hinge_L03
+    3300138: RR_Hinge_L04
+    3300140: RR_Hinge_R01
+    3300142: RR_Hinge_R02
+    3300144: RR_Hinge_R03
+    3300146: RR_Hinge_R04
+    3300148: RR_Wheels_01
+    3300150: RR_Wheels_02
+    3300152: RR_Wheels_03
+    3300154: RR_Wheels_04
+    3300156: Rudder
+    3300158: Windshield
+    4300000: Body_MeshPart0
+    4300002: Body_MeshPart1
+    4300004: Rudder
+    4300006: R_Elevator
+    4300008: L_Elevator
+    4300010: R_Airleron
+    4300012: R_Flap
+    4300014: L_Flap
+    4300016: L_Airleron
+    4300018: Windshield
+    4300020: RR_Arm_02
+    4300022: RR_ArmGear_01
+    4300024: RR_ArmGear_02
+    4300026: RR_ArmGear_04
+    4300028: RR_ArmGear_03
+    4300030: RR_Wheels_02
+    4300032: RR_Wheels_01
+    4300034: LR_Arm_02
+    4300036: LR_ArmGear_04
+    4300038: LR_ArmGear_03
+    4300040: LR_ArmGear_01
+    4300042: LR_ArmGear_02
+    4300044: LR_Wheels_01
+    4300046: LR_Wheels_02
+    4300048: RR_GearDoor_07
+    4300050: LR_GearDoor_07
+    4300052: LR_GearDoor_01
+    4300054: LR_GearDoor_02
+    4300056: LR_GearDoor_04
+    4300058: LR_GearDoor_05
+    4300060: LR_GearDoor_06
+    4300062: RR_GearDoor_01
+    4300064: RR_GearDoor_02
+    4300066: LR_GearDoor_03
+    4300068: RR_GearDoor_03
+    4300070: RR_GearDoor_06
+    4300072: RR_GearDoor_04
+    4300074: RR_GearDoor_05
+    4300076: Interior
+    4300078: LR_Hinge_R02
+    4300080: LR_Hinge_R01
+    4300082: RR_Hinge_L02
+    4300084: RR_Hinge_L01
+    4300086: RR_Hinge_L04
+    4300088: RR_Hinge_L03
+    4300090: LR_Hinge_R04
+    4300092: LR_Hinge_R03
+    4300094: LR_Hinge_L04
+    4300096: LR_Hinge_L03
+    4300098: LR_Hinge_L02
+    4300100: LR_Hinge_L01
+    4300102: RR_Hinge_R04
+    4300104: RR_Hinge_R03
+    4300106: RR_Hinge_R02
+    4300108: RR_Hinge_R01
+    4300110: RR_Arm_01
+    4300112: RR_Wheels_04
+    4300114: RR_Wheels_03
+    4300116: LR_Arm_01
+    4300118: LR_Wheels_03
+    4300120: LR_Wheels_04
+    4300122: LF_GearDoor_01
+    4300124: LF_GearDoor_02
+    4300126: F_Arm
+    4300128: F_Wheels
+    4300130: RF_GearDoor_02
+    4300132: RF_GearDoor_01
+    4300134: RF_Hinge_02
+    4300136: RF_Hinge_01
+    4300138: LF_Hinge_02
+    4300140: LF_Hinge_01
+    4300142: RF_Hinge_04
+    4300144: RF_Hinge_03
+    4300146: LF_Hinge_03
+    4300148: LF_Hinge_04
+    4300150: L_Propeller_02
+    4300152: L_Propeller_01
+    4300154: R_Propeller_01
+    4300156: R_Propeller_02
+    4300158: Pilot
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

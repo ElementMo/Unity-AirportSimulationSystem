@@ -1,0 +1,265 @@
+fileFormatVersion: 2
+guid: f008ce50a53d26b43868aa4030fcf26c
+timeCreated: 1493126219
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Ailerons_01
+    100004: Ailerons_02
+    100006: Airliner_Body
+    100008: Bone01
+    100010: Bone01 1
+    100012: Bone02
+    100014: Bone02 1
+    100016: Bone03
+    100018: Elevator_01
+    100020: Elevator_02
+    100022: Flaps_01
+    100024: Flaps_02
+    100026: Flaps_03
+    100028: Flaps_04
+    100030: IK Chain01
+    100032: Interior
+    100034: LandingGear_01
+    100036: LandingGear_02_
+    100038: LandingGear_03_
+    100040: LandingGear_04
+    100042: LandingGear_05
+    100044: LandingGear_06
+    100046: LandingGear_07
+    100048: LandingGear_Door_01
+    100050: LandingGear_Door_02
+    100052: LandingGear_Door_03
+    100054: LandingGear_Door_04
+    100056: LandingGear_Door_05
+    100058: LandingGear_Door_06
+    100060: LandingGear_Door_07
+    100062: LandingGear_Door_08
+    100064: pilot_01_
+    100066: pilot_02_
+    100068: Rudder_01
+    100070: Slats_01
+    100072: Slats_02
+    100074: Slats_03
+    100076: Slats_04
+    100078: Turbine_01
+    100080: Turbine_02
+    100082: windshield
+    400000: //RootNode
+    400002: Ailerons_01
+    400004: Ailerons_02
+    400006: Airliner_Body
+    400008: Bone01
+    400010: Bone01 1
+    400012: Bone02
+    400014: Bone02 1
+    400016: Bone03
+    400018: Elevator_01
+    400020: Elevator_02
+    400022: Flaps_01
+    400024: Flaps_02
+    400026: Flaps_03
+    400028: Flaps_04
+    400030: IK Chain01
+    400032: Interior
+    400034: LandingGear_01
+    400036: LandingGear_02_
+    400038: LandingGear_03_
+    400040: LandingGear_04
+    400042: LandingGear_05
+    400044: LandingGear_06
+    400046: LandingGear_07
+    400048: LandingGear_Door_01
+    400050: LandingGear_Door_02
+    400052: LandingGear_Door_03
+    400054: LandingGear_Door_04
+    400056: LandingGear_Door_05
+    400058: LandingGear_Door_06
+    400060: LandingGear_Door_07
+    400062: LandingGear_Door_08
+    400064: pilot_01_
+    400066: pilot_02_
+    400068: Rudder_01
+    400070: Slats_01
+    400072: Slats_02
+    400074: Slats_03
+    400076: Slats_04
+    400078: Turbine_01
+    400080: Turbine_02
+    400082: windshield
+    2300000: Ailerons_01
+    2300002: Ailerons_02
+    2300004: Airliner_Body
+    2300006: Elevator_01
+    2300008: Elevator_02
+    2300010: Flaps_01
+    2300012: Flaps_02
+    2300014: Flaps_03
+    2300016: Flaps_04
+    2300018: Interior
+    2300020: LandingGear_01
+    2300022: LandingGear_02_
+    2300024: LandingGear_03_
+    2300026: LandingGear_04
+    2300028: LandingGear_05
+    2300030: LandingGear_06
+    2300032: LandingGear_07
+    2300034: LandingGear_Door_01
+    2300036: LandingGear_Door_02
+    2300038: LandingGear_Door_03
+    2300040: LandingGear_Door_04
+    2300042: LandingGear_Door_05
+    2300044: LandingGear_Door_06
+    2300046: LandingGear_Door_07
+    2300048: LandingGear_Door_08
+    2300050: pilot_01_
+    2300052: pilot_02_
+    2300054: Rudder_01
+    2300056: Slats_01
+    2300058: Slats_02
+    2300060: Slats_03
+    2300062: Slats_04
+    2300064: Turbine_01
+    2300066: Turbine_02
+    2300068: windshield
+    3300000: Ailerons_01
+    3300002: Ailerons_02
+    3300004: Airliner_Body
+    3300006: Elevator_01
+    3300008: Elevator_02
+    3300010: Flaps_01
+    3300012: Flaps_02
+    3300014: Flaps_03
+    3300016: Flaps_04
+    3300018: Interior
+    3300020: LandingGear_01
+    3300022: LandingGear_02_
+    3300024: LandingGear_03_
+    3300026: LandingGear_04
+    3300028: LandingGear_05
+    3300030: LandingGear_06
+    3300032: LandingGear_07
+    3300034: LandingGear_Door_01
+    3300036: LandingGear_Door_02
+    3300038: LandingGear_Door_03
+    3300040: LandingGear_Door_04
+    3300042: LandingGear_Door_05
+    3300044: LandingGear_Door_06
+    3300046: LandingGear_Door_07
+    3300048: LandingGear_Door_08
+    3300050: pilot_01_
+    3300052: pilot_02_
+    3300054: Rudder_01
+    3300056: Slats_01
+    3300058: Slats_02
+    3300060: Slats_03
+    3300062: Slats_04
+    3300064: Turbine_01
+    3300066: Turbine_02
+    3300068: windshield
+    4300000: Airliner_Body
+    4300002: LandingGear_02_
+    4300004: LandingGear_03_
+    4300006: LandingGear_Door_06
+    4300008: LandingGear_04
+    4300010: LandingGear_05
+    4300012: LandingGear_Door_03
+    4300014: LandingGear_07
+    4300016: LandingGear_06
+    4300018: LandingGear_Door_07
+    4300020: LandingGear_Door_08
+    4300022: LandingGear_Door_01
+    4300024: LandingGear_Door_02
+    4300026: LandingGear_01
+    4300028: LandingGear_Door_04
+    4300030: LandingGear_Door_05
+    4300032: windshield
+    4300034: Interior
+    4300036: Rudder_01
+    4300038: Elevator_02
+    4300040: Elevator_01
+    4300042: Flaps_03
+    4300044: Flaps_04
+    4300046: Flaps_02
+    4300048: Flaps_01
+    4300050: Ailerons_02
+    4300052: Ailerons_01
+    4300054: Slats_04
+    4300056: Slats_03
+    4300058: Slats_02
+    4300060: Slats_01
+    4300062: Turbine_02
+    4300064: Turbine_01
+    4300066: pilot_02_
+    4300068: pilot_01_
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
