@@ -20,6 +20,9 @@ public class SelfDrive : MonoBehaviour {
     private List<Transform> nodes;//声明路径节点
     private int currentNode = 0;//记录当前目标节点
     private bool avoiding;//是否避障
+    private bool isStuck = false;//是否卡住
+    private float countdown = 10f;//卡住后的计时器
+    private float countdownEngine = 1f;//引擎倒退时长
 
 
     private WheelCollider FR;
@@ -30,7 +33,8 @@ public class SelfDrive : MonoBehaviour {
     private Transform TireFL;
     private Transform TireFR;//查找前轮模型
 
-
+    private float minV = 0.001f;
+    private Rigidbody rgCar;
 
 	// Use this for initialization
 	void Start ()
@@ -53,6 +57,8 @@ public class SelfDrive : MonoBehaviour {
         TireFR = FindOBJ.findit(TargetCar, "fr_wheel").GetComponent<Transform>();
         TireFL = FindOBJ.findit(TargetCar, "fl_wheel").GetComponent<Transform>();
 
+        rgCar = TargetCar.GetComponent<Rigidbody>();
+
     }
 	
 	void Update () {
@@ -60,12 +66,14 @@ public class SelfDrive : MonoBehaviour {
 	}
     private void FixedUpdate()
     {
+
         ApplySteer();
         Engine(maxTorque);
         UpdateMeshPos();
         CheckNodeDistance();
         Sensors();
         LerpToSteerAngle();
+        
     }
 
     private void ApplySteer()//计算车和node的相对向量方向
@@ -120,12 +128,30 @@ public class SelfDrive : MonoBehaviour {
         
         RaycastHit hit;//光线追踪射线
         Vector3 sensorStartPos = TargetCar.transform.position;
+        Vector3 doorSensor = TargetCar.transform.position;
+        doorSensor += TargetCar.transform.up * frontSensorPos.y;
+        doorSensor += TargetCar.transform.forward * frontSensorPos.z;
         sensorStartPos += TargetCar.transform.forward * frontSensorPos.z;
         sensorStartPos += TargetCar.transform.up * frontSensorPos.y;
+
         float avoidMultiplyer = 0f;//避让转向叠加器
         avoiding = false;
 
+        //右门传感器
+        if (Physics.Raycast(doorSensor, TargetCar.transform.right, out hit, sensorLength/5))
+        {
+            Debug.DrawLine(doorSensor, hit.point);
+            avoiding = true;
+            avoidMultiplyer = -1f;
+        }
 
+        //左门传感器
+        if (Physics.Raycast(doorSensor, -TargetCar.transform.right, out hit, sensorLength/5))
+        {
+            Debug.DrawLine(doorSensor, hit.point);
+            avoiding = true;
+            avoidMultiplyer = 1f;
+        }
 
         //右侧传感器
         sensorStartPos += TargetCar.transform.right * frontSideSensorPos;
@@ -141,6 +167,8 @@ public class SelfDrive : MonoBehaviour {
             Debug.DrawLine(sensorStartPos, hit.point);
             avoiding = true; ;
             avoidMultiplyer -= 0.5f;
+
+
         }
 
 
@@ -158,7 +186,6 @@ public class SelfDrive : MonoBehaviour {
             Debug.DrawLine(sensorStartPos, hit.point);
             avoiding = true;
             avoidMultiplyer += 0.5f;
-
         }
 
         //正前传感器
@@ -167,25 +194,44 @@ public class SelfDrive : MonoBehaviour {
         {
             if (Physics.Raycast(sensorStartPos, TargetCar.transform.forward, out hit, sensorLength))
             {
-                Engine(maxTorque * -1f);
+                //Engine(maxTorque * -1f);
                 avoiding = true;
                 if (hit.normal.x < 0)
                 {
-                    avoidMultiplyer = 1;
+                    avoidMultiplyer = 0.5f;
                 }
                 else
                 {
-                    avoidMultiplyer = -1;
+                    avoidMultiplyer = -0.5f;
                 }
                 Debug.DrawLine(sensorStartPos, hit.point);
             }
+            
         }
 
         if (avoiding)
         {
             targetSteerAngle = maxSteerAngle * avoidMultiplyer;
-            //FL.steerAngle = maxSteerAngle * avoidMultiplyer * 0.5f;
-            //FR.steerAngle = maxSteerAngle * avoidMultiplyer * 0.5f;
+
+            Stuck();//卡边警告器
+            if (isStuck == true)
+            {
+                avoidMultiplyer = 0;
+                Engine(-400f);
+                countdownEngine -= Time.deltaTime;
+                if (countdownEngine < 0)
+                {
+                    countdownEngine = 0;
+                }
+                if (countdownEngine == 0)
+                {
+                    countdownEngine = 1f;
+                }
+            }
+        }
+        if (!avoiding)
+        {
+            isStuck = false;
         }
     }
 
@@ -196,8 +242,21 @@ public class SelfDrive : MonoBehaviour {
 
     }
 
-    public void StuckAvoid()//车子卡住情况下后退
+    
+    
+    private void Stuck()//车子卡住数秒之后，执行警告
     {
-
+        countdown -= Time.deltaTime;
+        if (countdown < 0)
+        {
+            countdown = 0;
+        }
+        if (countdown == 0)
+        {
+            isStuck = true;
+            Debug.Log("Stucked");
+            countdown = 10f;
+        }
+        
     }
 }
