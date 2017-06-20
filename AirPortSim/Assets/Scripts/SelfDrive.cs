@@ -34,7 +34,6 @@ public class SelfDrive : MonoBehaviour {
     private Transform TireFR;//查找前轮模型
 
     private float minV = 0.001f;
-    private Rigidbody rgCar;
 
 	// Use this for initialization
 	void Start ()
@@ -57,7 +56,6 @@ public class SelfDrive : MonoBehaviour {
         TireFR = FindOBJ.findit(TargetCar, "fr_wheel").GetComponent<Transform>();
         TireFL = FindOBJ.findit(TargetCar, "fl_wheel").GetComponent<Transform>();
 
-        rgCar = TargetCar.GetComponent<Rigidbody>();
 
     }
 	
@@ -126,7 +124,7 @@ public class SelfDrive : MonoBehaviour {
     private void Sensors()//车辆传感器
     {
         
-        RaycastHit hit;//光线追踪射线
+        RaycastHit hit;//碰撞检测射线
         Vector3 sensorStartPos = TargetCar.transform.position;
         Vector3 doorSensor = TargetCar.transform.position;
         doorSensor += TargetCar.transform.up * frontSensorPos.y;
@@ -254,7 +252,7 @@ public class SelfDrive : MonoBehaviour {
         if (countdown == 0)
         {
             isStuck = true;
-            Debug.Log("Stucked");
+            //Debug.Log("Stucked");
             countdown = 10f;
         }
         

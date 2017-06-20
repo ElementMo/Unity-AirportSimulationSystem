@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: f1955f32026ea3c4d8fa9e99216a27ac
-timeCreated: 1497085757
+timeCreated: 1497966482
 licenseType: Free
 SubstanceImporter:
   serializedVersion: 5
@@ -10,9 +10,9 @@ SubstanceImporter:
     prototypeName: poured_concrete
     shaderName: 
     shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-    shaderKeywords: 
+    shaderKeywords: _EMISSION _METALLICGLOSSMAP _NORMALMAP _PARALLAXMAP
     renderQueue: -1
-    lightmapFlags: 5
+    lightmapFlags: 1
     inputs:
     - name: $outputsize
       value:
@@ -126,7 +126,7 @@ SubstanceImporter:
           name: _BumpMap
         second:
           texture: {instanceID: 0}
-          scale: {x: 1, y: 1}
+          scale: {x: 300, y: 150}
           offset: {x: 0, y: 0}
       - first:
           name: _DetailAlbedoMap
@@ -156,25 +156,25 @@ SubstanceImporter:
           name: _MainTex
         second:
           texture: {instanceID: 0}
-          scale: {x: 1, y: 1}
+          scale: {x: 300, y: 150}
           offset: {x: 0, y: 0}
       - first:
           name: _MetallicGlossMap
         second:
           texture: {instanceID: 0}
-          scale: {x: 1, y: 1}
+          scale: {x: 300, y: 150}
           offset: {x: 0, y: 0}
       - first:
           name: _OcclusionMap
         second:
           texture: {instanceID: 0}
-          scale: {x: 1, y: 1}
+          scale: {x: 300, y: 150}
           offset: {x: 0, y: 0}
       - first:
           name: _ParallaxMap
         second:
           texture: {instanceID: 0}
-          scale: {x: 1, y: 1}
+          scale: {x: 300, y: 150}
           offset: {x: 0, y: 0}
       floats:
       - first:
@@ -268,6 +268,10 @@ SubstanceImporter:
       material: {instanceID: 0}
       baseUID: 3695061378
     - shaderProp:
+        name: _ParallaxMap
+      material: {instanceID: 0}
+      baseUID: 3695061424
+    - shaderProp:
         name: _MetallicGlossMap
       material: {instanceID: 0}
       baseUID: 3695061388
@@ -275,10 +279,6 @@ SubstanceImporter:
         name: _OcclusionMap
       material: {instanceID: 0}
       baseUID: 3695061390
-    - shaderProp:
-        name: _ParallaxMap
-      material: {instanceID: 0}
-      baseUID: 3695061424
     buildTargetSettings:
     - serializedVersion: 2
       buildTarget: 
