@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 6136a042da24b9f4b85010f304f729c7
-timeCreated: 1499160101
+timeCreated: 1499235693
 licenseType: Free
 SubstanceImporter:
   serializedVersion: 5
@@ -10,9 +10,9 @@ SubstanceImporter:
     prototypeName: tile_black_marble
     shaderName: 
     shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-    shaderKeywords: 
+    shaderKeywords: _EMISSION _METALLICGLOSSMAP _NORMALMAP _PARALLAXMAP
     renderQueue: -1
-    lightmapFlags: 5
+    lightmapFlags: 1
     inputs:
     - name: $outputsize
       value:
@@ -37,7 +37,7 @@ SubstanceImporter:
         texture: {instanceID: 0}
     - name: saturation
       value:
-        scalar[0]: 0.5
+        scalar[0]: 0
         scalar[1]: 0
         scalar[2]: 0
         scalar[3]: 0
@@ -72,7 +72,7 @@ SubstanceImporter:
         texture: {instanceID: 0}
     - name: roughness
       value:
-        scalar[0]: 0.611765
+        scalar[0]: 0.61
         scalar[1]: 0
         scalar[2]: 0
         scalar[3]: 0
@@ -112,7 +112,7 @@ SubstanceImporter:
           name: _BumpMap
         second:
           texture: {instanceID: 0}
-          scale: {x: 1, y: 1}
+          scale: {x: 3, y: 3}
           offset: {x: 0, y: 0}
       - first:
           name: _DetailAlbedoMap
@@ -142,25 +142,25 @@ SubstanceImporter:
           name: _MainTex
         second:
           texture: {instanceID: 0}
-          scale: {x: 1, y: 1}
+          scale: {x: 3, y: 3}
           offset: {x: 0, y: 0}
       - first:
           name: _MetallicGlossMap
         second:
           texture: {instanceID: 0}
-          scale: {x: 1, y: 1}
+          scale: {x: 3, y: 3}
           offset: {x: 0, y: 0}
       - first:
           name: _OcclusionMap
         second:
           texture: {instanceID: 0}
-          scale: {x: 1, y: 1}
+          scale: {x: 3, y: 3}
           offset: {x: 0, y: 0}
       - first:
           name: _ParallaxMap
         second:
           texture: {instanceID: 0}
-          scale: {x: 1, y: 1}
+          scale: {x: 3, y: 3}
           offset: {x: 0, y: 0}
       floats:
       - first:
@@ -235,7 +235,7 @@ SubstanceImporter:
       aniso: 1
       wrapMode: 0
     - name: tile_black_marble_ambient_occlusion
-      alphaSource: 0
+      alphaSource: 8
       filterMode: 1
       aniso: 1
       wrapMode: 0
