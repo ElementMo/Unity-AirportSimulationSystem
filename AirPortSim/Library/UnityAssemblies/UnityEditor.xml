@@ -11406,11 +11406,6 @@ This value is the number of screen pixels per point of interface space. For inst
         <para>Is build script only enabled.</para>
       </summary>
     </member>
-    <member name="P:UnityEditor.EditorUserBuildSettings.compressFilesInPackage">
-      <summary>
-        <para>Compress files in package.</para>
-      </summary>
-    </member>
     <member name="P:UnityEditor.EditorUserBuildSettings.compressWithPsArc">
       <summary>
         <para>Build data compressed with PSArc.</para>
@@ -11569,11 +11564,6 @@ This value is the number of screen pixels per point of interface space. For inst
     <member name="P:UnityEditor.EditorUserBuildSettings.wsaSubtarget">
       <summary>
         <para>Sets and gets target device type for the application to run on when building to Windows Store platform.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEditor.EditorUserBuildSettings.wsaUWPSDK">
-      <summary>
-        <para>Sets and gets target UWP SDK to build Windows Store application against.</para>
       </summary>
     </member>
     <member name="P:UnityEditor.EditorUserBuildSettings.xboxBuildSubtarget">
@@ -12820,21 +12810,6 @@ More information - https:msdn.microsoft.comen-uslibrary/dn584397(v=vs.110).aspx.
     <member name="F:UnityEditor.GizmoType.Selected">
       <summary>
         <para>Draw the gizmo if it is selected.</para>
-      </summary>
-    </member>
-    <member name="T:UnityEditor.GraphicsJobMode">
-      <summary>
-        <para>Enum used to specify the graphics jobs mode to use.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEditor.GraphicsJobMode.Legacy">
-      <summary>
-        <para>Legacy graphics jobs.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEditor.GraphicsJobMode.Native">
-      <summary>
-        <para>Native graphics jobs.</para>
       </summary>
     </member>
     <member name="T:UnityEditor.GUIDrawer">
@@ -17016,11 +16991,6 @@ If the target name is in the provided list of existing names, a unique name is g
         <para>Enable GPU skinning on capable platforms.</para>
       </summary>
     </member>
-    <member name="P:UnityEditor.PlayerSettings.graphicsJobMode">
-      <summary>
-        <para>Selects the graphics job mode to use on platforms that support both Native and Legacy graphics jobs.</para>
-      </summary>
-    </member>
     <member name="P:UnityEditor.PlayerSettings.graphicsJobs">
       <summary>
         <para>Enable graphics jobs (multi threaded rendering).</para>
@@ -17058,7 +17028,7 @@ If the target name is in the provided list of existing names, a unique name is g
     </member>
     <member name="P:UnityEditor.PlayerSettings.muteOtherAudioSources">
       <summary>
-        <para>Stops or allows audio from other applications to play in the background while your Unity application is running.</para>
+        <para>Mute or allow audio from other applications to play in the background while the Unity application is running.</para>
       </summary>
     </member>
     <member name="P:UnityEditor.PlayerSettings.productName">
@@ -17467,11 +17437,6 @@ If the target name is in the provided list of existing names, a unique name is g
         <para>Set this property with your Apple Developer Team ID. You can find this on the Apple Developer website under &lt;a href="https:developer.apple.comaccount#membership"&gt; Account &gt; Membership &lt;/a&gt; . This sets the Team ID for the generated Xcode project, allowing developers to use the Build and Run functionality. An Apple Developer Team ID must be set here for automatic signing of your app.</para>
       </summary>
     </member>
-    <member name="P:UnityEditor.PlayerSettings.iOS.appleEnableAutomaticSigning">
-      <summary>
-        <para>Set this property to true for Xcode to attempt to automatically sign your app based on your appleDeveloperTeamID.</para>
-      </summary>
-    </member>
     <member name="P:UnityEditor.PlayerSettings.iOS.applicationDisplayName">
       <summary>
         <para>iOS application display name.</para>
@@ -17500,11 +17465,6 @@ If the target name is in the provided list of existing names, a unique name is g
     <member name="P:UnityEditor.PlayerSettings.iOS.forceHardShadowsOnMetal">
       <summary>
         <para>Should hard shadows be enforced when running on (mobile) Metal.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEditor.PlayerSettings.iOS.iOSManualProvisioningProfileID">
-      <summary>
-        <para>A provisioning profile Universally Unique Identifier (UUID) that Xcode will use to build your iOS app in Manual Signing mode.</para>
       </summary>
     </member>
     <member name="P:UnityEditor.PlayerSettings.iOS.locationUsageDescription">
@@ -17570,11 +17530,6 @@ If the target name is in the provided list of existing names, a unique name is g
     <member name="P:UnityEditor.PlayerSettings.iOS.targetOSVersionString">
       <summary>
         <para>Deployment minimal version of iOS.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEditor.PlayerSettings.iOS.tvOSManualProvisioningProfileID">
-      <summary>
-        <para>A provisioning profile Universally Unique Identifier (UUID) that Xcode will use to build your tvOS app in Manual Signing mode.</para>
       </summary>
     </member>
     <member name="P:UnityEditor.PlayerSettings.iOS.useOnDemandResources">
@@ -22722,6 +22677,11 @@ Valid values are in the range [0-1], with higher values generating a tighter mes
     <member name="T:UnityEditor.TizenOSVersion">
       <summary>
         <para>Tizen OS compatibility.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEditor.TizenOSVersion.Version23">
+      <summary>
+        <para></para>
       </summary>
     </member>
     <member name="F:UnityEditor.TizenOSVersion.Version24">

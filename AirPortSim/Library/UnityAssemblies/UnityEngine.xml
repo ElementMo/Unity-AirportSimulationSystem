@@ -22777,11 +22777,6 @@ Only usable on Android, Windows Phone or Windows Tablets.</para>
         <para>iPod Touch, fifth generation.</para>
       </summary>
     </member>
-    <member name="F:UnityEngine.iOS.DeviceGeneration.iPodTouch6Gen">
-      <summary>
-        <para>iPod Touch, sixth generation.</para>
-      </summary>
-    </member>
     <member name="F:UnityEngine.iOS.DeviceGeneration.iPodTouchUnknown">
       <summary>
         <para>Yet unknown iPod Touch.</para>
@@ -26718,19 +26713,10 @@ Only usable on Android, Windows Phone or Windows Tablets.</para>
     </member>
     <member name="M:UnityEngine.Material.SetBuffer(System.String,UnityEngine.ComputeBuffer)">
       <summary>
-        <para>Set a named ComputeBuffer value.</para>
+        <para>Set a ComputeBuffer value.</para>
       </summary>
-      <param name="nameID">Property name ID, use Shader.PropertyToID to get it.</param>
-      <param name="name">Property name.</param>
-      <param name="value">ComputeBuffer value to set.</param>
-    </member>
-    <member name="M:UnityEngine.Material.SetBuffer(System.Int32,UnityEngine.ComputeBuffer)">
-      <summary>
-        <para>Set a named ComputeBuffer value.</para>
-      </summary>
-      <param name="nameID">Property name ID, use Shader.PropertyToID to get it.</param>
-      <param name="name">Property name.</param>
-      <param name="value">ComputeBuffer value to set.</param>
+      <param name="propertyName"></param>
+      <param name="buffer"></param>
     </member>
     <member name="M:UnityEngine.Material.SetColor(System.String,UnityEngine.Color)">
       <summary>
@@ -28105,12 +28091,6 @@ Only usable on Android, Windows Phone or Windows Tablets.</para>
         <para>Creates an empty Mesh.</para>
       </summary>
     </member>
-    <member name="M:UnityEngine.Mesh.GetBindposes(System.Collections.Generic.List`1&lt;UnityEngine.Matrix4x4&gt;)">
-      <summary>
-        <para>Gets the bind poses for this instance.</para>
-      </summary>
-      <param name="bindposes">A list of bind poses to populate.</param>
-    </member>
     <member name="M:UnityEngine.Mesh.GetBlendShapeFrameCount(System.Int32)">
       <summary>
         <para>Returns the frame count for a blend shape.</para>
@@ -28146,49 +28126,11 @@ Only usable on Android, Windows Phone or Windows Tablets.</para>
       </summary>
       <param name="shapeIndex"></param>
     </member>
-    <member name="M:UnityEngine.Mesh.GetBoneWeights(System.Collections.Generic.List`1&lt;UnityEngine.BoneWeight&gt;)">
-      <summary>
-        <para>Gets the bone weights for this instance.</para>
-      </summary>
-      <param name="boneWeights">A list of bone weights to populate.</param>
-    </member>
-    <member name="M:UnityEngine.Mesh.GetColors(System.Collections.Generic.List`1&lt;UnityEngine.Color&gt;)">
-      <summary>
-        <para>Gets the vertex colors for this instance.</para>
-      </summary>
-      <param name="colors">A list of vertex colors to populate.</param>
-    </member>
-    <member name="M:UnityEngine.Mesh.GetColors(System.Collections.Generic.List`1&lt;UnityEngine.Color32&gt;)">
-      <summary>
-        <para>Gets the vertex colors for this instance.</para>
-      </summary>
-      <param name="colors">A list of vertex colors to populate.</param>
-    </member>
-    <member name="M:UnityEngine.Mesh.GetIndexCount(System.Int32)">
-      <summary>
-        <para>Gets the index count of the given submesh.</para>
-      </summary>
-      <param name="submesh"></param>
-    </member>
-    <member name="M:UnityEngine.Mesh.GetIndexStart(System.Int32)">
-      <summary>
-        <para>Gets the starting index location within the Mesh's index buffer, for the given submesh.</para>
-      </summary>
-      <param name="submesh"></param>
-    </member>
-    <member name="M:UnityEngine.Mesh.GetIndices(System.Collections.Generic.List`1&lt;System.Int32&gt;,System.Int32)">
-      <summary>
-        <para>Gets the index buffer for the specified sub mesh on this instance.</para>
-      </summary>
-      <param name="indices">A list of indices to populate.</param>
-      <param name="submesh">The sub mesh on this instance. See subMeshCount.</param>
-    </member>
     <member name="M:UnityEngine.Mesh.GetIndices(System.Int32)">
       <summary>
-        <para>Gets the index buffer for the specified sub mesh on this instance.</para>
+        <para>Returns the index buffer for the sub-Mesh.</para>
       </summary>
-      <param name="indices">A list of indices to populate.</param>
-      <param name="submesh">The sub mesh on this instance. See subMeshCount.</param>
+      <param name="submesh"></param>
     </member>
     <member name="M:UnityEngine.Mesh.GetNativeIndexBufferPtr">
       <summary>
@@ -28207,37 +28149,17 @@ Only usable on Android, Windows Phone or Windows Tablets.</para>
         <para>Pointer to the underlying graphics API vertex buffer.</para>
       </returns>
     </member>
-    <member name="M:UnityEngine.Mesh.GetNormals(System.Collections.Generic.List`1&lt;UnityEngine.Vector3&gt;)">
-      <summary>
-        <para>Gets the vertex normals for this instance.</para>
-      </summary>
-      <param name="normals">A list of vertex normals to populate.</param>
-    </member>
-    <member name="M:UnityEngine.Mesh.GetTangents(System.Collections.Generic.List`1&lt;UnityEngine.Vector4&gt;)">
-      <summary>
-        <para>Gets the tangents for this instance.</para>
-      </summary>
-      <param name="tangents">A list of tangents to populate.</param>
-    </member>
     <member name="M:UnityEngine.Mesh.GetTopology(System.Int32)">
       <summary>
         <para>Gets the topology of a sub-Mesh.</para>
       </summary>
       <param name="submesh"></param>
     </member>
-    <member name="M:UnityEngine.Mesh.GetTriangles(System.Collections.Generic.List`1&lt;System.Int32&gt;,System.Int32)">
-      <summary>
-        <para>Gets the triangle list for the specified sub mesh on this instance.</para>
-      </summary>
-      <param name="triangles">A list of vertex indices to populate.</param>
-      <param name="submesh">The sub mesh on this instance. See subMeshCount.</param>
-    </member>
     <member name="M:UnityEngine.Mesh.GetTriangles(System.Int32)">
       <summary>
-        <para>Gets the triangle list for the specified sub mesh on this instance.</para>
+        <para>Returns the triangle list for the sub-Mesh.</para>
       </summary>
-      <param name="triangles">A list of vertex indices to populate.</param>
-      <param name="submesh">The sub mesh on this instance. See subMeshCount.</param>
+      <param name="submesh"></param>
     </member>
     <member name="M:UnityEngine.Mesh.GetUVs(System.Int32,System.Collections.Generic.List`1&lt;UnityEngine.Vector2&gt;)">
       <summary>
@@ -28259,12 +28181,6 @@ Only usable on Android, Windows Phone or Windows Tablets.</para>
       </summary>
       <param name="channel">The UV Channel (zero-indexed).</param>
       <param name="uvs">List of UVs to get for the given index.</param>
-    </member>
-    <member name="M:UnityEngine.Mesh.GetVertices(System.Collections.Generic.List`1&lt;UnityEngine.Vector3&gt;)">
-      <summary>
-        <para>Gets the vertex positions for this instance.</para>
-      </summary>
-      <param name="vertices">A list of vertex positions to populate.</param>
     </member>
     <member name="M:UnityEngine.Mesh.MarkDynamic">
       <summary>
@@ -38145,33 +38061,6 @@ frame. Minimum value is 1 and maximum is 33.</para>
       <param name="min">The minimum allowed value.</param>
       <param name="max">The maximum allowed value.</param>
     </member>
-    <member name="T:UnityEngine.RangeInt">
-      <summary>
-        <para>Describes an integer range.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.RangeInt.end">
-      <summary>
-        <para>The end index of the range (not inclusive).</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.RangeInt.length">
-      <summary>
-        <para>The length of the range.</para>
-      </summary>
-    </member>
-    <member name="F:UnityEngine.RangeInt.start">
-      <summary>
-        <para>The starting index of the range, where 0 is the first position, 1 is the second, 2 is the third, and so on.</para>
-      </summary>
-    </member>
-    <member name="M:UnityEngine.RangeInt.#ctor(System.Int32,System.Int32)">
-      <summary>
-        <para>Constructs a new RangeInt with given start, length values.</para>
-      </summary>
-      <param name="start">The starting index of the range.</param>
-      <param name="length">The length of the range.</param>
-    </member>
     <member name="T:UnityEngine.Ray">
       <summary>
         <para>Representation of rays.</para>
@@ -39655,6 +39544,11 @@ See Also: ReflectionProbeTimeSlicingMode.</para>
         <para>Shader used for screen-space cascaded shadows.</para>
       </summary>
     </member>
+    <member name="F:UnityEngine.Rendering.BuiltinShaderType.Sprite">
+      <summary>
+        <para>Default shader used by sprites.</para>
+      </summary>
+    </member>
     <member name="T:UnityEngine.Rendering.CameraEvent">
       <summary>
         <para>Defines a place in camera's rendering to attach Rendering.CommandBuffer objects to.</para>
@@ -40766,7 +40660,7 @@ See Also: ReflectionProbe.RenderProbe.</para>
     </member>
     <member name="F:UnityEngine.Rendering.ReflectionProbeRefreshMode.ViaScripting">
       <summary>
-        <para>Using this option indicates that the probe will never be automatically updated by Unity while a game is running. This is useful if you wish to completely control the probe refresh behavior via scripting.
+        <para>Using this option indicates that the probe will never be automatically updated by Unity. This is useful if you wish to completely control the probe refresh behavior via scripting.
 
 See Also: ReflectionProbe.RenderProbe.</para>
       </summary>
@@ -48191,11 +48085,6 @@ Returns NULL if there is no associated alpha texture for the source sprite. This
         <para>Returns portion of the screen which is covered by the keyboard.</para>
       </summary>
     </member>
-    <member name="P:UnityEngine.TouchScreenKeyboard.canGetSelection">
-      <summary>
-        <para>Specifies whether the TouchScreenKeyboard supports the selection property. (Read Only)</para>
-      </summary>
-    </member>
     <member name="P:UnityEngine.TouchScreenKeyboard.done">
       <summary>
         <para>Specifies if input process was finished. (Read Only)</para>
@@ -48209,11 +48098,6 @@ Returns NULL if there is no associated alpha texture for the source sprite. This
     <member name="P:UnityEngine.TouchScreenKeyboard.isSupported">
       <summary>
         <para>Is touch screen keyboard supported.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEngine.TouchScreenKeyboard.selection">
-      <summary>
-        <para>Returns the character range of the selected text within the string currently being edited. (Read Only)</para>
       </summary>
     </member>
     <member name="P:UnityEngine.TouchScreenKeyboard.targetDisplay">
