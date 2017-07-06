@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class PlaneMove : MonoBehaviour
 {
+   
     public float maxTorque = 2000f;
     public WheelCollider[] wheelColliders = new WheelCollider[5];
 
@@ -51,9 +52,11 @@ public class PlaneMove : MonoBehaviour
 
     private void FixedUpdate()
     {
+       
         float steer = Input.GetAxis("Horizontal");
         float accelerate = Input.GetAxis("Vertical");
-
+       
+       
         float finalAngle = steer * 40f;
         wheelColliders[0].steerAngle = finalAngle;
         
