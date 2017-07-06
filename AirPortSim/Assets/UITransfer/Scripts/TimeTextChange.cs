@@ -13,7 +13,6 @@ public class TimeTextChange : MonoBehaviour {
     public void Update()
     {
         lightAngle = light.transform.rotation.x*180;
-        Debug.Log(lightAngle);
         min = (int)lightAngle*4;
         texthour = 6 + min / 60;
         textmin = min % 60;
