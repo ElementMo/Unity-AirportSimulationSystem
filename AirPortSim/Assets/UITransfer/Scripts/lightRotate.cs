@@ -5,18 +5,19 @@ using UnityEngine.UI;
 
 public class lightRotate : MonoBehaviour {
     public GameObject light1;
-    public Slider slider1;
+    private float time;
+
+    private void Update()
+    {
+        RotateLight();
+        if (time > 180)
+        {
+            time = 0;
+        }
+    }
     public void RotateLight()
     {
-        light1.transform.rotation = Quaternion.Euler(slider1.value, 0, 0);
+        light1.transform.rotation = Quaternion.Euler(time+=0.01f, 15, 0);
     }
-	// Use this for initialization
-	void Start () {
-        
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+
 }
