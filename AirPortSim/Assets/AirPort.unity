@@ -50,8 +50,8 @@ LightmapSettings:
     m_AlbedoBoost: 1
     m_TemporalCoherenceThreshold: 1
     m_EnvironmentLightingMode: 0
-    m_EnableBakedLightmaps: 1
-    m_EnableRealtimeLightmaps: 1
+    m_EnableBakedLightmaps: 0
+    m_EnableRealtimeLightmaps: 0
   m_LightmapEditorSettings:
     serializedVersion: 4
     m_Resolution: 2
@@ -22425,7 +22425,7 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1572580394}
-  m_LocalRotation: {x: 0.6680399, y: 0.3060369, z: 0.3477747, w: 0.5823374}
+  m_LocalRotation: {x: 0.66804, y: 0.30603692, z: 0.34777474, w: 0.58233744}
   m_LocalPosition: {x: -304.8795, y: 34.842518, z: -41.19324}
   m_LocalScale: {x: 1.0000006, y: 1.0000004, z: 0.9999999}
   m_Children: []
@@ -30942,8 +30942,8 @@ Camera:
   m_GameObject: {fileID: 2093776753}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.66176474, g: 0.66176474, b: 0.66176474, a: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -30958,7 +30958,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294966783
+    m_Bits: 256
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: 9ab798557464ed44988203c677baaf62, type: 2}
   m_TargetDisplay: 0
